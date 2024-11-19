@@ -67,7 +67,8 @@ main {
 }
 
 .search-section button {
-    padding: 8px 12px;
+    
+    padding: 9px 12px;
     background-color:  #ff4081;  
     color: white;
     border: none;
@@ -76,7 +77,7 @@ main {
     white-space: nowrap;
 }
 
-/* Media queries for responsiveness */
+/* Media queries for responsiveness */ 
 @media screen and (max-width: 768px) {
     .search-section {
         max-width: 250px;
