@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - BlogVerse</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="top-nav">
+            <div class="logo-section">
+                <a href="index.html" class="logo">BlogVerse</a>
+            </div>
+            <div class="search-section">
+                <input type="text" placeholder="Search..." id="search-input">
+                <button type="button" onclick="performSearch()">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="blogs.html">Blogs</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="create-blog.html">Create Blog</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h1>Contact Us</h1>
+            <form id="contact-form" onsubmit="return submitContactForm(event)">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BlogVerse. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Categories - BlogVerse</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="top-nav">
+            <div class="logo-section">
+                <a href="index.html" class="logo">BlogVerse</a>
+            </div>
+            <div class="search-section">
+                <input type="text" placeholder="Search..." id="search-input">
+                <button type="button" onclick="performSearch()">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="blogs.html">Blogs</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="create-blog.html">Create Blog</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="blog-categories">
+            <h1>Discover the latest in Technology</h1>
+            <div class="categories-grid">
+                
+                <div class="category-card">
+                    <div class="category-image" style="background-color: #e8e0ff00;">
+                        <img src="images/ai.webp" alt="Customer Service" >
+                    </div>
+                    <div class="category-content">
+                        <h3>Future of AI</h3>
+                        <div class="post-links">
+                            <a href="blog-post.html?id=1">AMD's impressive progress in the AI space in AI</a>
+                            <a href="blog-post.html?id=2">OpenAI in AI</a>
+                            <a href="blog-post.html?id=3">Apple Addresses Apple Intelligence</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-image" style="background-color: #f8f8f800;">
+                        <img src="images/Spacex.png" alt="Spacex">
+                    </div>
+                    <div class="category-content">
+                        <h3>Growth & Culture</h3>
+                        <div class="post-links">
+                            <a href="blog-post.html?id=4">Upcoming Starship Launch</a>
+                            <a href="blog-post.html?id=5">SpaceX successfully launched 20 Starlink satellites on November 9</a>
+                            <a href="blog-post.html?id=6">Record-Setting Starship Flight 5</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 BlogVerse. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

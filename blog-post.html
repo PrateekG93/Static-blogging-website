@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology Trends - BlogVerse</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="top-nav">
+            <div class="logo-section">
+                <a href="index.html" class="logo">BlogVerse</a>
+            </div>
+            <div class="search-section">
+                <input type="text" placeholder="Search..." id="search-input">
+                <button type="button" onclick="performSearch()">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="blogs.html">Blogs</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="create-blog.html">Create Blog</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="blog-post-container">
+        <article class="blog-post">
+            <div class="blog-header">
+                <h1>AMD Is Making Great Strides in AI, May End Up Merging With Intel</h1>
+                <div class="blog-meta">
+                    <span class="author">By Rob Enderle</span>
+                    <span class="date">Published on January 15, 2024</span>
+                </div>
+            </div>
+            
+            <img src="images/AI blog.jpg" alt="AMD AI Technology" class="blog-hero-image" style="width: 60%; height: auto;" align="center">
+            
+            <div class="blog-content">
+                <p>AMD has been making impressive progress in the AI space, potentially positioning itself for a historic merger with Intel. This development could reshape the semiconductor industry and accelerate AI innovation.</p>
+                
+                <h2>The Rise of AMD in AI</h2>
+                <p>AMD's recent advancements in AI processing capabilities have caught the attention of industry experts. The company's new chip architectures specifically designed for AI workloads are showing promising results in both performance and energy efficiency.</p>
+                
+                <h2>Market Impact</h2>
+                <p>The semiconductor industry is witnessing a significant shift as AMD continues to gain market share. Their innovative approach to AI chip design has created new opportunities for data centers and enterprise applications.</p>
+                
+                <h2>Future Implications</h2>
+                <p>The possibility of an AMD-Intel merger could create a powerhouse in the semiconductor industry, potentially accelerating AI development and creating new standards for computing performance.</p>
+            </div>
+        </article>
+
+        <section class="comments-section">
+            <h2>Comments</h2>
+            <form id="comment-form" class="comment-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Your Comment</label>
+                    <textarea id="comment" name="comment" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-comment">Post Comment</button>
+            </form>
+
+            <div id="comments-container" class="comments-container">
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Dedicated to bringing you the most engaging and informative content across various domains.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Use</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 BlogVerse. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

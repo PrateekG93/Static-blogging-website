@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogVerse - Your Modern Blog Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="top-nav">
+            <div class="logo-section">
+                <a href="index.html" class="logo">BlogVerse</a>
+            </div>
+            <div class="search-section">
+                <input type="text" placeholder="Search..." id="search-input">
+                <button type="button" onclick="performSearch()">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="blogs.html">Blogs</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="create-blog.html">Create Blog</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/hero-bg.jpg');">
+        <div class="hero-content">
+            <h1>Discover Amazing Stories</h1>
+            <p>Your gateway to insightful articles across technology, science, arts, and culture.</p>
+        </div>
+    </section>
+
+    <main>
+        <section class="featured-blogs">
+            <h2>Featured Blogs</h2>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/tech.jpg" alt="Tech Blog">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Technology Trends</h3>
+                        <p>Exploring the latest innovations in AI and machine learning.</p>
+                        <a href="blog-categories.html" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/science.jpg" alt="Science Blog">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Scientific Discoveries</h3>
+                        <p>Breaking down recent breakthroughs in quantum physics.</p>
+                        <a href="blog-categories.html" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/arts.jpg" alt="Arts Blog">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Arts & Culture</h3>
+                        <p>Celebrating contemporary artists and their unique perspectives.</p>
+                        <a href="blog-categories.html" class="read-more">Read More →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for the latest updates and exclusive content.</p>
+                <form id="newsletter-form" onsubmit="return subscribeNewsletter(event)">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Dedicated to bringing you the most engaging and informative content across various domains.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Use</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 BlogVerse. All rights reserved.</p>
+        </div>
+    </footer>
+
+<div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="blogs.html">Blogs</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="create-blog.html">Create Blog</a>
+
+    <script src="script.js"></script>
+</body>
+</html>
