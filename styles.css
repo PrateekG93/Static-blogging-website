@@ -76,6 +76,7 @@ main {
     white-space: nowrap;
 }
 
+/* Media queries for responsiveness */
 @media screen and (max-width: 768px) {
     .search-section {
         max-width: 250px;
